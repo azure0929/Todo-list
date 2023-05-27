@@ -1,0 +1,29 @@
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+.content-box .content-detail {
+  width: 420px;
+  padding: 10px;
+  border-bottom: 1px solid;
+  background-color: transparent;
+}
+.content-box .submit {
+  font-size: 24px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #191919;
+  cursor: pointer;
+  transition: .3s;
+}
+.content-box .submit span {
+  color: #fff;
+}
+.content-box .submit:focus {
+  transform: scale(0.9);
+}

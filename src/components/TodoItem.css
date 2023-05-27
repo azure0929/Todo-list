@@ -1,0 +1,72 @@
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  border-radius: 12px;
+  transition: .3s;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .2);
+  cursor: pointer;
+}
+.todo-item:last-child {
+  margin-bottom: 0px;
+}
+.todo-item .todo-item-content {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-item-content .todo-item-content-detail {
+  display: flex;
+}
+.todo-item-content .todo-item-content-detail .todo-item-area {
+  width: 560px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid;
+  border-bottom-color: #aaa;
+  background-color: transparent;
+}
+.todo-item-content .todo-item-content-detail .checkbox {
+  width: 26px;
+  height: 26px;
+  display: none;
+  transition: .3s;
+}
+.todo-item-content .todo-item-content-detail .b::before {
+  content: "\f204";
+  font-family: "Font Awesome 5 Free";
+  font-size: 24px;
+  font-weight: 700;
+  margin-right: 20px;
+  color: #ccc;
+  position: relative;
+}
+.todo-item-content .todo-item-content-detail .checkbox:checked+label.b::before {
+  content: "\f205";
+  color: #448aff;
+}
+.todo-item-content .todo-item-delete {
+  width: 20px;
+  height: 20px;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  transform: .3s;
+}
+.todo-item-content .todo-item-delete:hover {
+  color: rgb(200, 12, 12);
+}
+.todo-item .todo-item-update {
+  font-size: 14px;
+}
+.todo-item:hover {
+  background-color: rgba(112, 225, 221, 0.3);
+}
+.todo-item:hover .todo-item-content-detail .b::before {
+  color: #191919;
+}

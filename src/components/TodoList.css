@@ -1,0 +1,23 @@
+.todo-list-container {
+  margin-bottom: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+.todo-list-container .todo-title {
+  margin-top: 30px;
+}
+.todo-list-container .todo-title:first-child {
+  margin-top: 0px;
+}
+.todo-list-container .todo-list-delete {
+  margin-top: 30px;
+  text-align: right;
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.sortable-dragging {
+  transition: .3s;
+}
