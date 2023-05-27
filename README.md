@@ -42,9 +42,9 @@
 |:--:|
 |![](https://github.com/azure0929/todo-list/assets/128226527/e13d7ab2-a509-428d-b3e6-b17944a932e8)|
 |스크롤 - overflow : scroll|
-|![](https://github.com/azure0929/todo-list/assets/128226527/38d1ad26-2b70-4efe-8a4d-32a3746368a2)|
+|![](https://github.com/azure0929/todo-list/assets/128226527/f183b815-4482-401f-88a7-15a5eea0fb1d)|
 |할 일 추가 및 삭제|
-|![](https://github.com/azure0929/todo-list/assets/128226527/71ed66bd-a99a-42b8-84c9-f262e4c498d3)|
+|![](https://github.com/azure0929/todo-list/assets/128226527/eff9697e-01e1-45a5-b477-f37113655092)|
 |할 일 완료|
 |![](https://github.com/azure0929/todo-list/assets/128226527/3b098ae4-aee9-4c43-b0c0-db029e4c3635)|
 
