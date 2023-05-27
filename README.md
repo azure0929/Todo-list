@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+## 🎬 3차 과제 : API를 활용한 To do 만들기
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> 작성자 : 양준용 - 4조  
 
-## Available Scripts
+<br>
 
-In the project directory, you can run:
+[결과물](https://kdt5-yangjunyong-todolist.netlify.app/)  
 
-### `npm start`
+<br>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+> HTML, CSS, JS, React 활용
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<br><br>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 필수 요구사항
 
-### `npm run build`
+- [x] 할 일 목록(List)이 출력돼야 합니다.
+- [x] 할 일 항목(Item)을 새롭게 추가할 수 있어야 합니다.
+- [x] 할 일 항목을 수정할 수 있어야 합니다.
+- [x] 할 일 항목을 삭제할 수 있어야 합니다.
+- [x] 실제 서비스로 배포하고 접근 가능한 링크를 추가해야 합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 선택 요구사항
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- [x] 할 일 항목의 순서를 바꿀 수 있도록 만들어보세요. (추천 라이브러리 - [SortableJS](http://sortablejs.github.io/Sortable/))
+- [x] 할 일을 완료하지 않은 항목과 완료한 항목을 분류해서 출력해보세요.
+- [ ] 할 일을 완료한 항목을 한 번에 삭제할 수 있도록 만들어보세요.
+- [x] 할 일 항목의 최신 수정일을 표시해보세요.
+- [ ] 할 일 목록이 출력되기 전에 로딩 애니메이션이 보이도록 만들어보세요.
+- [ ] 기타 동작이 완료되기 전에 로딩 애니메이션이 보이도록 만들어보세요.
+- [x] 차별화가 가능하도록 프로젝트를 최대한 예쁘게 만들어보세요.
+- [ ] 할 일과 관련된 기타 기능도 고려해보세요.
 
-### `npm run eject`
+<br><br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 화면구성
+|Home|
+|:--:|
+|![](https://github.com/azure0929/todo-list/assets/128226527/e13d7ab2-a509-428d-b3e6-b17944a932e8)|
+|스크롤 - overflow : scroll|
+|![](https://github.com/azure0929/todo-list/assets/128226527/38d1ad26-2b70-4efe-8a4d-32a3746368a2)|
+|할 일 추가 및 삭제|
+|![](https://github.com/azure0929/todo-list/assets/128226527/71ed66bd-a99a-42b8-84c9-f262e4c498d3)|
+|할 일 완료|
+|![](https://github.com/azure0929/todo-list/assets/128226527/3b098ae4-aee9-4c43-b0c0-db029e4c3635)|
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<br><br>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 주요기능
+<br>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 1. 스크롤 기능  
 
-## Learn More
+- overflow: scroll;를 주어서 넘친다면 스크롤 기능으로 내용을 볼 수 있도록 설정
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```css
+overflow: scroll;
+```
+<br>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 2. 현재 날짜 출력  
 
-### Analyzing the Bundle Size
+- {today.year}.{today.month}.{today.date} 활용
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```js
+<div className="today-content-date-detail">
+  <div>{today.year}.{today.month}.{today.date}</div> 
+</div>
+```
 
-### Making a Progressive Web App
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+<br><br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 어려웠던 점 
+- loading 기능 구현에 대한 지식 부족
+- 완료한 항목 전체를 삭제 할 수 있는 기능 구현에 대한 지식 부족
 
-### Deployment
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 궁금한 점 
+- 이번 과제에 페이스북에서 만든 자바스크립트 패키지 매니저인 yarn을 활용했습니다. npm보다 속도나 안전성이 우수하다는 것을 알게 되었습니다. yarn으로 진행하다가 package들 간의 버전 문제가 발생해서 node-sass@4.14.1로 적용을 해보았지만 실패하여 css로 각 component 별로 import 방식으로 적용했습니다. node-sass@4.14.1 이외에 버전 문제를 해결하는 방법이 있다면 조언 부탁드립니다.
