@@ -10,14 +10,14 @@
   border: 20px solid;
   box-shadow: 10px 10px 30px rgba(0, 0, 0, .6);
   overflow: scroll;
-  .today-content-date {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 32px;
-    font-weight: 500;
-    .today-content-date-detail {
-      width: 270px;
-      margin: 0 auto;
-    }
-  }
+}
+.today-content .today-content-date {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.today-content .today-content-date .today-content-date-detail {
+  width: 270px;
+  margin: 0 auto;
 }
